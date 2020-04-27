@@ -12,7 +12,7 @@ const IndexPage = ({ data }) => (
     <ul>
       {data.allContentfulInvite.edges.map(({ node }) => (
         <li>
-          <Link to={node.id}>{node.id}</Link>
+          <Link to={`vuistje/${node.id}`}>{node.id}</Link>
         </li>
       ))}
     </ul>
